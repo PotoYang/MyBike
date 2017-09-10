@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加信息"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/editsharp"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bike_online_num"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/et_submit_num"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/input_num"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="5.0dip"
+            android:paddingRight="40dp"
+            android:singleLine="true"
+            android:textColor="#ff3b3b3b"
+            android:textSize="16.0sp"
+            tools:ignore="RtlSymmetry"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/editsharp"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bike_online_password"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/et_submit_password"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="@string/input_password"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="5.0dip"
+            android:paddingRight="30dp"
+            android:textColor="#ff3b3b3b"
+            android:textSize="16.0sp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/selector_1"
+        android:gravity="center"
+        android:text="@string/btn_submit"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add_to_online"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector_2"
+            android:gravity="center"
+            android:text="@string/btn_add_to_online"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_add_to_offline"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/selector_2"
+            android:gravity="center"
+            android:text="@string/btn_add_to_offline"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>
